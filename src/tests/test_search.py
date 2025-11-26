@@ -1,6 +1,6 @@
 import pytest
 from selenium.common.exceptions import TimeoutException
-from src.pages.main_page import MainPage
+
 
 def test_search_yandex(main_page):
     try:

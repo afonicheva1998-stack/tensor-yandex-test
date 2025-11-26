@@ -14,6 +14,8 @@ def test_images_yandex(main_page):
 
         img.open_first_image()
         src1 = img.current_image_src
+        assert src1 and "http" in src1, "Картинка не загрузилась"
+
         img.next_image()
         src2 = img.current_image_src
         assert src2 != src1, "Картинка не сменилась"
