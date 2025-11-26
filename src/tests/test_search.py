@@ -7,6 +7,6 @@ def test_search_yandex(main_page):
         main_page.enter_search("Тензор")
         assert main_page.suggest_visible(), "Нет таблицы подсказок"
         main_page.press_enter()
-        assert "tensor.ru" in main_page.driver.page_source
+        assert img.search_field_value.lower() in img.category_title.lower()
     except TimeoutException:
         pytest.skip("Элементы страницы не прогрузились за 5 с")
