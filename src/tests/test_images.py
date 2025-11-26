@@ -1,3 +1,5 @@
+import pytest
+from selenium.common.exceptions import TimeoutException
 from src.pages.images_page import ImagesPage
 
 
