@@ -1,13 +1,14 @@
 from selenium.webdriver.common.by import By
 from src.pages.base_page import BasePage
 
+
 class ImagesPage(BasePage):
     FIRST_CATEGORY = (By.CSS_SELECTOR, "div.cl-teaser__wrap")
-    SEARCH_FIELD   = (By.CSS_SELECTOR, "input[name='text']")
-    FIRST_IMAGE    = (By.CSS_SELECTOR, "img.cl-teaser__image")
-    IMG_VIEWER     = (By.CSS_SELECTOR, "img[class*='image__image']")
-    NEXT_BTN       = (By.CSS_SELECTOR, "button[class*='__button_type_next']")
-    PREV_BTN       = (By.CSS_SELECTOR, "button[class*='__button_type_prev']")
+    SEARCH_FIELD = (By.CSS_SELECTOR, "input[name='text']")
+    FIRST_IMAGE = (By.CSS_SELECTOR, "img.cl-teaser__image")
+    IMG_VIEWER = (By.CSS_SELECTOR, "img[class*='image__image']")
+    NEXT_BTN = (By.CSS_SELECTOR, "button[class*='__button_type_next']")
+    PREV_BTN = (By.CSS_SELECTOR, "button[class*='__button_type_prev']")
 
     def open_first_category(self):
         self.click(self.FIRST_CATEGORY)

@@ -1,5 +1,6 @@
 from src.pages.images_page import ImagesPage
 
+
 def test_images_yandex(main_page):
     main_page.go_images()
     assert "yandex.ru/images" in main_page.driver.current_url
