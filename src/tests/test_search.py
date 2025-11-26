@@ -1,5 +1,3 @@
-from src.pages.main_page import MainPage
-from selenium.webdriver.common.keys import Keys
 
 def test_search_yandex(main_page):
     main_page.enter_search("Тензор")
